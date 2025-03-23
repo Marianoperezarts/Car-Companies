@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            height: 500px;
+            flex: 1;
+            padding: 20px;
+            color: white;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .Volkswagen { background-color: #1F2F57; }
+        .Toyota { background-color: #eb0a1e; }
+        .Stellantis { background-color: #243782; }
+        .card h2 { margin-bottom: 10px; }
+        .card p { flex-grow: 1; }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button:hover {
+            background-color: black;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card Volkswagen">
+            <h2>Volkswagen <br> (VWAGY)</h2>
+            <p>Volkswagen (VWAGY) is a Germany-based multinational automotive manufacturer. It develops and produces passenger cars, trucks, and light commercial vehicles. Models include the Tiguan, Golf, Jetta, and Passat. The company stopped making the Volkswagen Beetle in 2019. Luxury brands include Porsche and Audi.</p>
+            <a href="#" class="button">Learn More</a> 
+        </div>
+        <div class="card Toyota">
+            <h2>Toyota Motor Corp. <br> (TM) </h2>
+            <p>Toyota (TM) is a Japan-based multinational company known for efficiency and quality. It designs and manufactures cars, trucks, and commercial vehicles, including the Corolla, Camry, 4Runner, Tacoma, and Prius. Lexus is its luxury division.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div class="card Stellantis">
+            <h2>Stellantis <br> (STLA)  </h2>
+            <p>Stellantis (STLA) was created in 2021 through the merger of Groupe PSA and FCA (Fiat Chrysler Automobiles). It operates globally under brands including Peugeot, Citroën, Opel, Jeep, Ram, Dodge, and Chrysler. The company is headquartered in Amsterdam.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>
